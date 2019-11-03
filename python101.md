@@ -65,31 +65,65 @@ Programmers faced with a number of recurring problems as they write object orien
 
 ### In simple Terms:
 
+Python is an object oriented programming language.
+A Class is like an object constructor, or a "blueprint" for creating objects.
+
 ### Some Detail:
+
+To create a class, use the keyword class
 
 ### To visualize:
 
+Python Class Demo: Write a Python program to convert an integer to a roman numeral.
 
+![Class](./images/class.png)
 ---
 ## Object
 
 ### In simple Terms:
 
+Object is simply a collection of data (variables) and methods (functions) that act on those data. 
+
+The object() function returns an empty object.
+
+You cannot add new properties or methods to this object.
+
+This object is the base for all classes, it holds the built-in properties and methods which are default for all classes.
+
 ### Some Detail:
+
+Syntax: object()
 
 ### To visualize:
 
+Create Object: we use the class named myTime to create objects. 
+Create an object t1, and print the value of t. 
 
+![Object](./images/object.png)
 ---
 ## Static
 
 ### In simple Terms:
 
+Static methods do not require object creation.
+
+A static method can always be called, but is part of a class.
+
+Method requires you to create an object: Not the case with static methods.
+
+
 ### Some Detail:
+
+Static method
+Create a class and add a method. You should explicitly define it’s a static method by adding @staticmethod.
+
+Once you defined the class, you can call the methods directly.
+
+This calls the method without creating an object. Unlike normal class methods, they do not have access to objects variables.
 
 ### To visualize:
 
-
+![Static](./images/static.png)
 ---
 ## Property / Attribute
 
@@ -199,10 +233,10 @@ Programmers faced with a number of recurring problems as they write object orien
 - [x] Added Link on README.md file ~ Faisal
 - [x] How Python uses Indentation to control Flow ~Steven 
 - [X] Don't Repeat Yourself ~Steven
-- [ ] Design Patterns from Gang of Four
-- [ ] Class
-- [ ] Object
-- [ ] Static 
+- [X] Design Patterns from Gang of Four ~Steven 
+- [X] Class ~Steven
+- [X] Object ~Steven
+- [X] Static ~Steven
 - [ ] Property / Attribute
 - [ ] Method 
 - [ ] Exception
@@ -213,7 +247,4 @@ Programmers faced with a number of recurring problems as they write object orien
 - [ ] Extend Class
 - [ ] CSV Files 
 - [ ] Reading Files 
-- [x]
-- [x]
-- [x]
-- [x]
+
