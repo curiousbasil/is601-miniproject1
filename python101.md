@@ -115,6 +115,7 @@ Method requires you to create an object: Not the case with static methods.
 ### Some Detail:
 
 Static method
+
 Create a class and add a method. You should explicitly define it’s a static method by adding @staticmethod.
 
 Once you defined the class, you can call the methods directly.
@@ -137,31 +138,77 @@ This calls the method without creating an object. Unlike normal class methods, t
 ---
 ## Method
 
+A Python method is similar to a Python function, but it must be called on an object. 
+
+
 ### In simple Terms:
 
-### Some Detail:
+To create it, you must put it inside a class. 
+Now in this Car class, we have three methods, for instance, start(), speedup(), and turn(). 
+In this example, let’s call the turn() Python method on blackcar. 
+
+blackcar.turn()
+
+## Some Detail:
+
+The method printhello() has a name, takes a parameter, and returns a value.
 
 ### To visualize:
 
+![Method](./images/method.png)
 
 ---
 ## Exception
 
 ### In simple Terms:
 
+Python provides features to handle any unexpected error in your Python programs. 
+Also, add debugging capabilities in them. 
+
+An exception is an error that happens during execution of a program. When that
+error occurs, Python generate an exception that can be handled, which avoids your
+program to crash.
+
 ### Some Detail:
 
-### To visualize:
+Exceptions are convenient in many ways for handling errors and special conditions
+in a program. When you think that you have a code which can produce an error then
+you can use exception handling.  
 
+Below are examples of common exceptions errors in Python:
+
+IOError
+If the file cannot be opened.
+
+ImportError
+If python cannot find the module
+
+### To visualize:
+Open the file in the READ mode and then try to perform a write operation. 
+For this instance, below code helps to handle the exception.
+
+![Exception](./images/exception.png)
 
 ---
 ## Unit Test
 
 ### In simple Terms:
 
+Unit Testing is the first level of software testing where the smallest testable parts of a software are tested.
+
+
 ### Some Detail:
 
+unittest defines tests by the following two ways :
+
+Manage test “fixtures” using code.
+
+Test itself.
+
 ### To visualize:
+This test() method will fail if TRUE is ever FALSE.
+
+![Unittest](./images/unittest.png)
 
 
 ---
@@ -169,10 +216,23 @@ This calls the method without creating an object. Unlike normal class methods, t
 
 ### In simple Terms:
 
+A constructor is a method that Python calls when it instantiates an object using the definitions found in your class. 
+Python relies on the constructor to perform tasks such as assigning values to any instance variables that the object 
+will need when it starts. Also, constructors verify that there are enough resources for the object and perform any 
+other start-up task.
+
+
 ### Some Detail:
+
+The name of a constructor is always the same, __init__(). The constructor can accept arguments when necessary to create 
+the object. When you create a class without a constructor, Python automatically creates a default constructor  
+that doesn’t do anything. Every class must have a constructor, even if it simply relies on the default constructor. 
 
 ### To visualize:
 
+Default constructor
+
+![constructor](./images/constructor.png)
 
 ---
 ## Factory
@@ -238,10 +298,10 @@ This calls the method without creating an object. Unlike normal class methods, t
 - [X] Object ~Steven
 - [X] Static ~Steven
 - [ ] Property / Attribute
-- [ ] Method 
-- [ ] Exception
-- [ ] Unit Test
-- [ ] Constructor
+- [X] Method ~Steven 
+- [X] Exception ~Steven
+- [X] Unit Test ~Steven
+- [X] Constructor ~Steven
 - [ ] Factory 
 - [ ] Decorator 
 - [ ] Extend Class

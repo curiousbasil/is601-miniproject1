@@ -1,7 +1,18 @@
-class Iceship(object):
+class Flounder:
+    fish = ""
 
-    @staticmethod
-    def start():
-        print('start')
+    # default constructor
+    def __init__(self):
+        self.fish = "Flounder"
 
-Iceship.start()
+    # a method for printing data members
+    def print_Fish(self):
+        print(self.fish)
+
+    # creating object of the class
+
+obj = Flounder()
+
+    # calling the instance method using the object obj
+
+obj.print_Fish()
