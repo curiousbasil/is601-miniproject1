@@ -1,18 +1,27 @@
-class Flounder:
-    fish = ""
+# Python program to explain property() function
+# Alphabet class
+class Alphabet:
+    def __init__(self, value):
+        self._value = value
+        # getting the values
+    def getValue(self):
+        print('Getting value')
+        return self._value
+        # setting the values
+    def setValue(self, value):
+        print('Setting value to ' + value)
+        self._value = value
+        # deleting the values
+    def delValue(self):
+        print('Deleting value')
+        del self._value
 
-    # default constructor
-    def __init__(self):
-        self.fish = "Flounder"
+    value = property(getValue, setValue, delValue, )
 
-    # a method for printing data members
-    def print_Fish(self):
-        print(self.fish)
+# passing the value
+x = Alphabet('Hello')
+print(x.value)
 
-    # creating object of the class
+x.value = 'H'
 
-obj = Flounder()
-
-    # calling the instance method using the object obj
-
-obj.print_Fish()
+del x.value

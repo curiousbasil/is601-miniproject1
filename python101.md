@@ -130,11 +130,24 @@ This calls the method without creating an object. Unlike normal class methods, t
 
 ### In simple Terms:
 
+Property() function is to create property of a class. Returns a property attribute from the given getter, setter and deleter. 
+If no arguments are given, property() method returns a base property attribute that doesn't contain any getter, setter or deleter.
+
 ### Some Detail:
+
+Syntax: property(fget, fset, fdel, doc)
+
+Parameters:
+fget() – used to get the value of attribute
+fset() – used to set the value of attribute
+fdel() – used to delete the attribute value
+doc() – string that contains the documentation (docstring) for the attribute
+
+
 
 ### To visualize:
 
-
+![Property](./images/property.png)
 ---
 ## Method
 
@@ -238,30 +251,58 @@ Default constructor
 ## Factory
 
 ### In simple Terms:
-
+Developers may not know all objects to create in advance.
+Some objects can be created only at execution time after a user requests so.
 ### Some Detail:
+
+The idea is to have one function, the factory, that takes an input string and outputs an object.
+The type of object depends on the type of input string you specify. This technique could make your program more easily extensible also. 
+A new programmer could easily add functionality by adding a new string and class, without having to read all of the source code.
+
 
 ### To visualize:
 
+The example below demonstrates a factory method. The factory method returns a new object of either type depending on the input.
 
+![factory](./images/factory.png)
 ---
 ## Decorator
 
 ### In simple Terms:
 
+Decorator is useful tool in Python since it allows programmers to modify the behavior of function or class. 
+Also, decorator allows to wrap another function to extend the behavior of wrapped function, without permanently 
+modifying it.
+
 ### Some Detail:
+Method is function that expects its first parameter to be a reference to the current object. 
+We can build decorators for methods the same way, while taking self into consideration in the wrapper function.
 
 ### To visualize:
 
-
+![decorator](./images/decorator.png)
 ---
 ## Extend Class
 
 ### In simple Terms:
 
+Extend class iterates over its argument and adding each element to the list and extending the list. 
+The length of the list increases by number of elements in it’s argument
+
 ### Some Detail:
 
+If we want to extend any existing list by concatenating the contents of any other lists to it. 
+Then we should use lists’ extend() method.
+
+
+
+
 ### To visualize:
+
+list.extend(anotherList)
+Now contents of list1 will be extended. 
+
+![extend](./images/extend.png)
 
 
 ---
@@ -269,20 +310,34 @@ Default constructor
 
 ### In simple Terms:
 
+A CSV file (Comma Separated Values file) is a type of plain text file that uses specific structuring to arrange 
+tabular data. Because it’s a plain text file, it can contain only actual text data
+
 ### Some Detail:
+
+CSV files use a comma to separate each specific data value. Here’s what that structure looks like:
 
 ### To visualize:
 
+![csvfile](./images/csvfile.png)
 
 ---
 ## Reading Files
 
 ### In simple Terms:
 
+Reading from a CSV file is done using the reader object. The CSV file is opened as a text file with 
+Python’s built-in open() function, which returns a file object. 
+
 ### Some Detail:
+
+Each row returned by the reader is a list of String elements containing the data found by removing the delimiters. 
+The first row returned contains the column names, which is handled in a special way.
 
 ### To visualize:
 
+![employeetxt](./images/employeetxt.png)
+![csvread](./images/csvread.png)
 
 ---
 
@@ -297,14 +352,14 @@ Default constructor
 - [X] Class ~Steven
 - [X] Object ~Steven
 - [X] Static ~Steven
-- [ ] Property / Attribute
+- [X] Property / Attribute ~Steven
 - [X] Method ~Steven 
 - [X] Exception ~Steven
 - [X] Unit Test ~Steven
 - [X] Constructor ~Steven
-- [ ] Factory 
-- [ ] Decorator 
-- [ ] Extend Class
-- [ ] CSV Files 
-- [ ] Reading Files 
+- [X] Factory ~Steven
+- [X] Decorator ~Steven 
+- [X] Extend Class ~Steven
+- [X] CSV Files ~Steven 
+- [X] Reading Files ~Steven 
 
